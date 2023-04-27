@@ -1,0 +1,37 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 30px auto 0;
+}
+
+.btn-create-user, .btn-login { 
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  white-space: nowrap; // 文字が二段にならないようにする
+  text-decoration: none; // 下線を削除
+}
+
+.btn-create-user {
+  background-color: green;
+  color: white;
+}
+
+.btn-login {
+  background-color: blue;
+  color: white;
+}

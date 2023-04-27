@@ -3,12 +3,25 @@
   <head>
     <title>WorkoutApp</title>
     <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="header-left">
+          <%= link_to "Work Out App", root_path, class: "header-title" %>
+        </div>
+        <div class="header-right">
+          <%= link_to "Top Page", root_path, class: "header-link" %>
+        </div>
+      </div>
+    </header>
+
     <%= yield %>
   </body>
 </html>
