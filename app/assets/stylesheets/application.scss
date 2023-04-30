@@ -2,3 +2,22 @@
 @import "bootstrap";
 @import "pages/home";
 @import "layouts/header"; // 追加
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-header {
+    background-color: black;
+    padding: 0.5rem 1rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  

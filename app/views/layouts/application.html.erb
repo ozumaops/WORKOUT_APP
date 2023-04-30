@@ -1,7 +1,8 @@
+<% provide(:title, "Top") %>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WorkoutApp</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= csrf_meta_tags %>
 
@@ -11,16 +12,12 @@
   </head>
 
   <body>
-    <header class="main-header">
+   <header class="main-header">
       <div class="container">
-        <div class="header-left">
-          <%= link_to "Work Out App", root_path, class: "header-title" %>
-        </div>
-        <div class="header-right">
-          <%= link_to "Top Page", root_path, class: "header-link" %>
-        </div>
+        <%= link_to "Work Out App", root_path, class: "header-title" %>
+        <%= link_to "Top Page", root_path, class: "header-link" %>
       </div>
-    </header>
+   </header>
 
     <%= yield %>
   </body>
